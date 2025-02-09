@@ -1,0 +1,11 @@
+_G.loop = true;
+while _G.loop do wait()
+
+
+for i,v in pairs(workspace.Worlds.StarterWorld.Yen:GetDescendants()) do
+	if v.Name == "TouchInterest" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+wait(.5)
+end
+end
+end
